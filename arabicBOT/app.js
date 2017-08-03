@@ -81,8 +81,8 @@ client.on('ready',  () => {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
   console.log(`Logged in as  * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-  console.log('discord : https://discord.gg/kZKFSgr');
-  console.log('');
+  console.log('discord : https://discord.gg/N3aQrM');
+  console.log('Discord.Mas');
 client.user.setStatus("dnd");
 });
 
