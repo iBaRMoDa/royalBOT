@@ -114,7 +114,6 @@ client.on('ready', () => {
    client.on('message', message => {
      if (message.content === "-help") {
 message.author.send(".Best Commands" + `  **
-🔧               -bc | الرسالة الجماعية 💫
 
  ".General Commands"
 🔧               -ping | سرعة الأتصال
@@ -323,43 +322,3 @@ client.on("message", message => {
      
 });
 
-client.on('message', message => {
-if (message.content.split(' ')[0] == '-bc')
- message.guild.members.forEach( member => {
-         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-member.send(  "```" + "📢" + message.guild.name + ":``` " + message.content.substr(3));
-                                                            message.delete();
-});});
-
-client.on("message", message => {
-    var prefix = "-";
- 
-            var args = message.content.substring(prefix.length).split(" ");
-            if (message.content.startsWith(prefix + "bc")) {
-                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
- if (!args[1]) {
-                                let embed3 = new Discord.RichEmbed()
-                                .setDescription("لم تقم بكتابة الرسالة ؟ | ⚠")
-                                .setColor("FFFF00")
-                                message.channel.sendEmbed(embed3);
-                            } else {
-
-                            let embed4 = new Discord.RichEmbed()
-                                    .setDescription('تم جاري ارسالة الرسالة ...| 📢')
-
-                                message.channel.sendEmbed(embed4);
-                                                      message.delete();
-                            }
-                          }
-
-     
-});
-   client.on('message',message => {
-    const swearWords = ["-bc"];
-if( swearWords.some(word => message.content.includes(word)) ) {
-  if(message.member.hasPermission(2146958583)) return null; else {
-  message.reply("``ADMINISTRATOR للأسف , ليس لديك خاصية `` |⚠"); 
-  message.delete(5); 	  
-  }
-}
-});
