@@ -81,8 +81,8 @@ client.on('ready',  () => {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
   console.log(`Logged in as  * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-  console.log('discord : https://discord.gg/N3aQrM');
-  console.log('Discord.Mas');
+  console.log('⚙            https://discord.gg/hKDyGNN | سيرفر الدعم');
+  console.log('⚙            snapchat : ibarmoda');
 client.user.setStatus("dnd");
 });
 
@@ -98,7 +98,7 @@ client.on('ready', () => {
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
   .setDescription("معلومات عن الحــساب")
-               .setFooter(`© RoyalDev ™.`, 'https://cdn.discordapp.com/attachments/334701598196367370/335685097351151620/royalbot.png')
+                                          .setFooter(`© RoyalDev ™.`, 'https://cdn.discordapp.com/attachments/334701598196367370/335685097351151620/royalbot.png')
   .setColor("#9B59B6")
   .addField("اســـم الحســاب", `${message.author.username}`)
   .addField('كود الحساب الخاص', message.author.discriminator)
@@ -141,11 +141,11 @@ message.author.send(".Best Commands" + `  **
 
 
 ".support"
-⚙            https://discord.gg/kZKFSgr | سيرفر الدعم 
-⚙            http://cutt.us/RoyalBoT  | لـ أضافة البوت في سيرفرك
+⚙            https://discord.gg/hKDyGNN | سيرفر الدعم 
+⚙            snapchat : ibarmoda
 
 
-© Made By :RoyalDev ™.
+© Made By :<@!222825921311277059> ™.
 
 
 **`);
@@ -161,7 +161,7 @@ message.author.send(".Best Commands" + `  **
  
   .setColor("#FF0000")
   .addField('``سرعة أتصال الــبوت`` ' , `${Date.now() - message.createdTimestamp}` + ' ms`')
-                 .setFooter(`© RoyalDev ™.`, 'https://cdn.discordapp.com/attachments/334701598196367370/335685097351151620/royalbot.png')
+                 .setFooter(`© Made By :<@!222825921311277059> ™.`, 'https://cdn.discordapp.com/attachments/334701598196367370/335685097351151620/royalbot.png')
 
   message.channel.sendEmbed(embed);
     }
