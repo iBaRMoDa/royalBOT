@@ -85,6 +85,26 @@ client.on('ready',  () => {
   console.log('⚙            snapchat : ibarmoda');
 client.user.setStatus("dnd");
 });
+                                                                                                                                                                                              var prefix = "!";
+
+client.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command === "Bb") {
+    let numArray = args.map(n=> parseInt(n));
+    let total = numArray.reduce( (p, c) => p+c);
+
+    message.channel.sendMessage(total).catch(console.error);
+  }
+  
+
+  });
 
 // playing
 client.on('ready', () => {
